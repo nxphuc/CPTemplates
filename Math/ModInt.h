@@ -16,12 +16,12 @@ Tested:
 -   https://atcoder.jp/contests/abc215/tasks/abc215_e
 
 Usage:
-    modular a, b;
+    mint a, b;
     cin >> a >> b;
-    modular c = a + b;
-    modular d = a - b;
-    modular e = a * b;
-    modular f = a / b;
+    mint c = a + b;
+    mint d = a - b;
+    mint e = a * b;
+    mint f = a / b;
     cout << c << d << e << f << "\n";
  */
 const int MOD = 998244353;
@@ -102,4 +102,4 @@ struct ModInt {
     friend std::istream& operator >> (std::istream& is, ModInt& m) { return is >> m.v; }
 };
 
-using modular = ModInt<MOD>;
+using mint = ModInt<MOD>;
